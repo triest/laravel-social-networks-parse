@@ -17,6 +17,10 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    'vk_token' => env('VK_TOKEN',null),
+
+    'vk_api_url' => env('VK_API_URL',null),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment
