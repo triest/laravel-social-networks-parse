@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ParseController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,4 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+Route::prefix('parse')->middleware('cors')->group(function () {
+    Route::post('/',[ParseController::class,'parse']);
+});
