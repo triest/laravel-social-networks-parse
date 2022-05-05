@@ -8,13 +8,14 @@
         <div class="col-sm">
           <img v-if="results && results.avatar" :src="results.avatar" v-bind:alt="pic">
         </div>
+
         <div class="col-sm">
           <b> Followers</b>
     <p> <span
         v-if="results && results.followers_count">{{ results.followers_count }} </span>
     </p>
   </div>
-  <div class="col-sm">
+       <div class="col-sm">
     <b>Posts</b>
     <p>  <span
         v-if="results && results.common_count!=null">{{ results.common_count }} </span></p>

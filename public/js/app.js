@@ -5378,12 +5378,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -5399,6 +5393,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
 //
 //
 //
@@ -28612,9 +28607,10 @@ var render = function () {
     "div",
     { staticClass: "container" },
     [
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
+      _c("div", {
+        staticClass: "text-center",
+        staticStyle: { margin: "20px 0px 20px 0px" },
+      }),
       _vm._v(" "),
       _c("br"),
       _vm._v(" "),
@@ -28623,39 +28619,7 @@ var render = function () {
     1
   )
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "text-center",
-        staticStyle: { margin: "20px 0px 20px 0px" },
-      },
-      [
-        _c("span", { staticClass: "text-secondary" }, [
-          _vm._v("Laravel Vue CRUD Example"),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
-      [
-        _c("div", { staticClass: "collapse navbar-collapse" }, [
-          _c("div", { staticClass: "navbar-nav" }),
-        ]),
-      ]
-    )
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
