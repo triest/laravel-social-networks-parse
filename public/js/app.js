@@ -28703,24 +28703,26 @@ var render = function () {
     _vm._v(" "),
     _c("p"),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-5" }, [
+      _c("div", { staticClass: "col-sm" }, [
         _vm.results && _vm.results.avatar
           ? _c("img", { attrs: { src: _vm.results.avatar, alt: _vm.pic } })
           : _vm._e(),
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-sm-6" }, [
-        _c("div", { staticClass: "col-sm-3" }, [
-          _c("b", [_vm._v(" Followers")]),
-          _vm._v(" "),
+      _c("div", { staticClass: "col-sm" }, [
+        _c("b", [_vm._v(" Followers")]),
+        _vm._v(" "),
+        _c("p", [
           _vm.results && _vm.results.followers_count
             ? _c("span", [_vm._v(_vm._s(_vm.results.followers_count) + " ")])
             : _vm._e(),
         ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm" }, [
+        _c("b", [_vm._v("Posts")]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-sm-3" }, [
-          _c("b", [_vm._v("Posts")]),
-          _vm._v(" "),
+        _c("p", [
           _vm.results && _vm.results.common_count != null
             ? _c("span", [_vm._v(_vm._s(_vm.results.common_count) + " ")])
             : _vm._e(),
